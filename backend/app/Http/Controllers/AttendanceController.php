@@ -64,4 +64,16 @@ class AttendanceController extends Controller
 
         return response()->json(['message' => 'Saved'], 200);
     }
+
+    public function studentsByClass(Request $request) {
+    $data = $request->validate([
+        'class_name' => ['required','string','max:255'],
+    ]);
+
+    return \App\Models\Student::query()
+        ->where('class_name', $data['class_name'])
+        ->orderBy('name')
+        ->get(['id','name','class_name']);
+}
+
 }

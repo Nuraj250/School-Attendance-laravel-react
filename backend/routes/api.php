@@ -27,8 +27,10 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/classes', [AttendanceController::class, 'classes']);
         Route::post('/attendance/sessions', [AttendanceController::class, 'createSession']);
         Route::post('/attendance/sessions/{id}/marks', [AttendanceController::class, 'saveMarks']);
+        Route::get('/students/by-class', [\App\Http\Controllers\AttendanceController::class, 'studentsByClass']);
     });
 
     // Reports (both roles can access)
     Route::get('/students/{id}/attendance', [ReportController::class, 'studentReport']);
+
 });
