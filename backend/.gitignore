@@ -1,0 +1,49 @@
+# --- Laravel / PHP ---
+/vendor/
+composer.phar
+.phpunit.result.cache
+.php-cs-fixer.cache
+/.php-cs-fixer.php
+
+# --- Env & Secrets ---
+/.env
+/.env.*
+/storage/*.key
+
+# --- Storage (keep dirs, ignore contents) ---
+/storage/logs/*
+/storage/framework/cache/**
+/storage/framework/sessions/**
+/storage/framework/views/**
+!/storage
+!/storage/logs
+!/storage/framework
+!/storage/framework/cache
+!/storage/framework/sessions
+!/storage/framework/views
+
+# --- Public build artifacts ---
+/public/hot
+/public/storage
+/public/build
+
+# --- Node (if installed by scaffolding) ---
+/node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Bootstrap cache (compiled files) ---
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+
+# --- IDE / OS junk ---
+/.idea/
+*.code-workspace
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Docker / local tooling ---
+/.docker/
+docker-compose.override.yml
