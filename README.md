@@ -75,8 +75,6 @@ Import the collection at the repo root:
 
 ## Screenshots
 
-Place images in `docs/screenshots/` and reference them here.
-
 | View                 | Screenshot                                |
 | -------------------- | ----------------------------------------- |
 | Login                | `docs/screenshots/login.png`              |
@@ -84,8 +82,6 @@ Place images in `docs/screenshots/` and reference them here.
 | Admin → Teachers     | `docs/screenshots/admin-teachers.png`     |
 | Teacher → Attendance | `docs/screenshots/teacher-attendance.png` |
 | Student Report       | `docs/screenshots/student-report.png`     |
-
-*(Add images to the folder and commit. Optional: embed with markdown once added.)*
 
 ---
 
