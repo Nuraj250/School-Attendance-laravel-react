@@ -1,6 +1,3 @@
-Here’s a drop-in **root `README.md`** that ties everything together and points to the backend & frontend READMEs, with run steps and screenshot slots.
-
-```md
 # School Attendance (Laravel + React)
 
 Simple school attendance system — **Laravel API** + **React SPA** with roles (**Admin / Teacher**), daily attendance, and basic reports.
